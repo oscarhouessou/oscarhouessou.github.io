@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar HOUESSOU - Aspirant Chercheur en Deep Learning</title>
+    <title>Oscar HOUESSOU - Data Scientist & AI Researcher</title>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="translations.js" defer></script>
 </head>
 
 <body>
@@ -19,14 +19,18 @@
                 <div class="logo">Oscar HOUESSOU</div>
             </div>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#interets">Intérêts</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#accueil" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="#interets" data-i18n="nav.interests">Intérêts</a></li>
+                <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+                <li><a href="#projets" data-i18n="nav.projects">Projets</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
+                <li><a href="#competences" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
         </div>
     </nav>
 
@@ -34,29 +38,29 @@
         <div class="container">
             <div class="hero-content">
                 <div>
-                    <div class="hero-badge">
+                    <div class="hero-badge" data-i18n="hero.badge">
                         🎓 Data Scientist & Chercheur en IA
                     </div>
-                    <h1>
+                    <h1 data-i18n="hero.name">
                         Oscar HOUESSOU
                     </h1>
-                    <h2 class="hero-subheading">
+                    <h2 class="hero-subheading" data-i18n="hero.title">
                         Ingénieur en <span class="gradient-text">Intelligence Artificielle</span> et Modélisation
                     </h2>
-                    <p class="subtitle">
+                    <p class="subtitle" data-i18n="hero.subtitle">
                         Data Scientist passionné par la résolution de problèmes métiers complexes grâce à l'IA.
                         Fort d'une expérience en recherche académique et en industrie, je développe des solutions
                         d'IA à fort impact : chatbots intelligents, modèles de vision par ordinateur, scoring de crédit,
                         et outils d'IA explicable pour garantir transparence et confiance.
                     </p>
-                    <p class="hero-location">
+                    <p class="hero-location" data-i18n="hero.location">
                         📍 Cotonou, Bénin | 💼 Data Scientist @ Gozem | 🔬 Chercheur en IA
                     </p>
                     <div class="cta-buttons">
-                        <a href="#projets" class="btn btn-primary">
+                        <a href="#projets" class="btn btn-primary" data-i18n="hero.btn.projects">
                             🚀 Voir mes réalisations
                         </a>
-                        <a href="#contact" class="btn btn-secondary">
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.btn.contact">
                             ✉️ Me contacter
                         </a>
                     </div>
@@ -71,9 +75,9 @@
     <section id="interets">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">🔬 Expertise Technique</div>
-                <h2 class="section-title">Domaines d'Expertise</h2>
-                <p class="section-subtitle">
+                <div class="section-badge" data-i18n="interests.badge">🔬 Expertise Technique</div>
+                <h2 class="section-title" data-i18n="interests.title">Domaines d'Expertise</h2>
+                <p class="section-subtitle" data-i18n="interests.subtitle">
                     Compétences approfondies et axes de recherche privilégiés
                 </p>
             </div>
@@ -81,39 +85,45 @@
             <div class="interests-grid">
                 <div class="interest-card">
                     <div class="interest-icon">🎵</div>
-                    <h3>Traitement du Signal Audio</h3>
-                    <p>Application du deep learning pour l'analyse et la classification de signaux acoustiques complexes
+                    <h3 data-i18n="interests.audio.title">Traitement du Signal Audio</h3>
+                    <p data-i18n="interests.audio.desc">Application du deep learning pour l'analyse et la classification
+                        de signaux acoustiques complexes
                     </p>
                 </div>
 
                 <div class="interest-card">
                     <div class="interest-icon">🧠</div>
-                    <h3>Deep Learning (CNN, RNN)</h3>
-                    <p>Réseaux de neurones convolutifs et récurrents pour le traitement de données séquentielles</p>
+                    <h3 data-i18n="interests.dl.title">Deep Learning (CNN, RNN)</h3>
+                    <p data-i18n="interests.dl.desc">Réseaux de neurones convolutifs et récurrents pour le traitement de
+                        données séquentielles</p>
                 </div>
 
                 <div class="interest-card">
                     <div class="interest-icon">🔍</div>
-                    <h3>IA Explicable (XAI)</h3>
-                    <p>Développement de modèles interprétables pour garantir la transparence des décisions de l'IA</p>
+                    <h3 data-i18n="interests.xai.title">IA Explicable (XAI)</h3>
+                    <p data-i18n="interests.xai.desc">Développement de modèles interprétables pour garantir la
+                        transparence des décisions de l'IA</p>
                 </div>
 
                 <div class="interest-card">
                     <div class="interest-icon">📊</div>
-                    <h3>Séries Temporelles</h3>
-                    <p>Modélisation prédictive de séquences avec LSTM et GRU pour des phénomènes dynamiques</p>
+                    <h3 data-i18n="interests.ts.title">Séries Temporelles</h3>
+                    <p data-i18n="interests.ts.desc">Modélisation prédictive de séquences avec LSTM et GRU pour des
+                        phénomènes dynamiques</p>
                 </div>
 
                 <div class="interest-card">
                     <div class="interest-icon">🏷️</div>
-                    <h3>Classification Multi-étiquettes</h3>
-                    <p>Systèmes de classification capables de détecter plusieurs catégories simultanément</p>
+                    <h3 data-i18n="interests.ml.title">Classification Multi-étiquettes</h3>
+                    <p data-i18n="interests.ml.desc">Systèmes de classification capables de détecter plusieurs
+                        catégories simultanément</p>
                 </div>
 
                 <div class="interest-card">
                     <div class="interest-icon">⚙️</div>
-                    <h3>MLOps & Engineering</h3>
-                    <p>Déploiement, surveillance et maintenance de modèles d'IA en production</p>
+                    <h3 data-i18n="interests.mlops.title">MLOps & Engineering</h3>
+                    <p data-i18n="interests.mlops.desc">Déploiement, surveillance et maintenance de modèles d'IA en
+                        production</p>
                 </div>
             </div>
         </div>
@@ -122,9 +132,9 @@
     <section id="publications">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">📚 Publications</div>
-                <h2 class="section-title">Publications Scientifiques</h2>
-                <p class="section-subtitle">
+                <div class="section-badge" data-i18n="publications.badge">📚 Publications</div>
+                <h2 class="section-title" data-i18n="publications.title">Publications Scientifiques</h2>
+                <p class="section-subtitle" data-i18n="publications.subtitle">
                     Contributions à la recherche en modélisation hydrologique et Deep Learning
                 </p>
             </div>
@@ -143,7 +153,7 @@
                         pour la modélisation de la relation pluie-débit dans un contexte hydrologique.
                     </p>
                     <a href="https://www.scirp.org/journal/paperinformation?paperid=136353" target="_blank"
-                        class="publication-link">
+                        class="publication-link" data-i18n="publications.link">
                         🔗 Consulter la publication →
                     </a>
                 </div>
@@ -172,53 +182,54 @@
     <section id="projets">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">💡 Réalisations</div>
-                <h2 class="section-title">Projets Significatifs</h2>
-                <p class="section-subtitle">
+                <div class="section-badge" data-i18n="projects.badge">💡 Réalisations</div>
+                <h2 class="section-title" data-i18n="projects.title">Projets Significatifs</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">
                     Solutions innovantes développées et déployées
                 </p>
             </div>
 
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>🤖 DataTalk - Analyse de Données</h3>
-                    <p>
+                    <h3 data-i18n="projects.datatalk.title">🤖 DataTalk - Analyse de Données</h3>
+                    <p data-i18n="projects.datatalk.desc">
                         Application interactive permettant d'analyser vos données en langage naturel.
                         Posez des questions et obtenez des insights automatiques instantanés.
                     </p>
                     <a href="https://datatalk-app-805677040572.europe-west4.run.app/" target="_blank"
-                        class="project-link">
+                        class="project-link" data-i18n="projects.datatalk.link">
                         🔗 Découvrir DataTalk →
                     </a>
                 </div>
 
                 <div class="project-card">
-                    <h3>💬 Gozem AI Chatbot</h3>
-                    <p>
+                    <h3 data-i18n="projects.chatbot.title">💬 Gozem AI Chatbot</h3>
+                    <p data-i18n="projects.chatbot.desc">
                         Chatbot intelligent développé pour Gozem, capable de répondre aux questions des utilisateurs
                         et de fournir une assistance automatisée de haute qualité.
                     </p>
                     <a href="https://gozem-ai-chatbot-test-805677040572.europe-west2.run.app" target="_blank"
-                        class="project-link">
+                        class="project-link" data-i18n="projects.chatbot.link">
                         🔗 Tester le Chatbot →
                     </a>
                 </div>
 
                 <div class="project-card">
-                    <h3>🌊 HyMoLap - Simulation Hydrologique</h3>
-                    <p>
+                    <h3 data-i18n="projects.hymolap.title">🌊 HyMoLap - Simulation Hydrologique</h3>
+                    <p data-i18n="projects.hymolap.desc">
                         Application interactive Shiny pour la simulation et la visualisation de données temporelles
                         hydrologiques.
                         Outil développé pour faciliter la compréhension et l'analyse de systèmes dynamiques complexes.
                     </p>
-                    <a href="https://oscarhouessou.shinyapps.io/hymolap1/" target="_blank" class="project-link">
+                    <a href="https://oscarhouessou.shinyapps.io/hymolap1/" target="_blank" class="project-link"
+                        data-i18n="projects.hymolap.link">
                         🔗 Découvrir l'application →
                     </a>
                 </div>
 
                 <div class="project-card">
-                    <h3>📊 Modèles de Surveillance Séquentielle</h3>
-                    <p>
+                    <h3 data-i18n="projects.surveillance.title">📊 Modèles de Surveillance Séquentielle</h3>
+                    <p data-i18n="projects.surveillance.desc">
                         Implémentation de modèles de surveillance basés sur des données séquentielles pour la détection
                         d'anomalies et la prédiction de tendances dans des séries temporelles complexes.
                     </p>
@@ -230,8 +241,8 @@
     <section id="experience">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">💼 Expérience</div>
-                <h2 class="section-title">Parcours Professionnel</h2>
+                <div class="section-badge" data-i18n="experience.badge">💼 Expérience</div>
+                <h2 class="section-title" data-i18n="experience.title">Parcours Professionnel</h2>
             </div>
 
             <div class="experience-timeline">
@@ -275,7 +286,7 @@
             </div>
 
             <div class="education-section">
-                <h3 class="education-heading">Formation Académique</h3>
+                <h3 class="education-heading" data-i18n="experience.education">Formation Académique</h3>
                 <div class="experience-timeline">
                     <div class="timeline-item">
                         <div class="timeline-content">
@@ -305,13 +316,13 @@
     <section id="competences">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">⚡ Compétences</div>
-                <h2 class="section-title">Compétences Techniques</h2>
+                <div class="section-badge" data-i18n="skills.badge">⚡ Compétences</div>
+                <h2 class="section-title" data-i18n="skills.title">Compétences Techniques</h2>
             </div>
 
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h4>Langages de Programmation</h4>
+                    <h4 data-i18n="skills.languages.title">Langages de Programmation</h4>
                     <ul>
                         <li><strong>Python</strong> – Data Science, IA, scripts avancés</li>
                         <li>R – Statistiques, visualisation</li>
@@ -381,9 +392,9 @@
     <section id="contact">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">✉️ Contact</div>
-                <h2 class="section-title">Me Contacter</h2>
-                <p class="section-subtitle">
+                <div class="section-badge" data-i18n="contact.badge">✉️ Contact</div>
+                <h2 class="section-title" data-i18n="contact.title">Me Contacter</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">
                     Contactez-moi pour discuter de collaborations techniques ou de projets innovants
                 </p>
             </div>
@@ -391,26 +402,26 @@
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
-                    <h4>Email</h4>
+                    <h4 data-i18n="contact.email">Email</h4>
                     <a href="mailto:oscarhouessou0@gmail.com">oscarhouessou0@gmail.com</a>
                 </div>
 
                 <div class="contact-card">
                     <div class="contact-icon">📱</div>
-                    <h4>Téléphone</h4>
+                    <h4 data-i18n="contact.phone">Téléphone</h4>
                     <p class="contact-value">+229 01 65 50 97 16</p>
                 </div>
 
                 <div class="contact-card">
                     <div class="contact-icon">💼</div>
-                    <h4>LinkedIn</h4>
+                    <h4 data-i18n="contact.linkedin">LinkedIn</h4>
                     <a href="https://www.linkedin.com/in/oscarhouessou"
                         target="_blank">linkedin.com/in/oscarhouessou</a>
                 </div>
 
                 <div class="contact-card">
                     <div class="contact-icon">📍</div>
-                    <h4>Localisation</h4>
+                    <h4 data-i18n="contact.location">Localisation</h4>
                     <p class="contact-value">Cotonou, Bénin</p>
                 </div>
             </div>
@@ -419,8 +430,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Oscar HOUESSOU. Tous droits réservés.</p>
-            <p class="footer-note">
+            <p data-i18n="footer.rights">&copy; 2025 Oscar HOUESSOU. Tous droits réservés.</p>
+            <p class="footer-note" data-i18n="footer.tagline">
                 Ingénieur en IA passionné par la recherche en Deep Learning
             </p>
         </div>
