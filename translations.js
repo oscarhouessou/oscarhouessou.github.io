@@ -9,7 +9,7 @@ const translations = {
         'nav.experience': 'Expérience',
         'nav.skills': 'Compétences',
         'nav.contact': 'Contact',
-        
+
         // Hero Section
         'hero.badge': 'Data Scientist & Chercheur en IA',
         'hero.name': 'Oscar HOUESSOU',
@@ -18,7 +18,7 @@ const translations = {
         'hero.location': '📍 Cotonou, Bénin | 💼 Data Scientist @ Gozem | 🔬 Chercheur en IA',
         'hero.btn.projects': '🚀 Voir mes réalisations',
         'hero.btn.contact': '✉️ Me contacter',
-        
+
         // Interests Section
         'interests.badge': '🔬 Expertise Technique',
         'interests.title': 'Domaines d\'Expertise',
@@ -35,13 +35,13 @@ const translations = {
         'interests.ml.desc': 'Systèmes de classification capables de détecter plusieurs catégories simultanément',
         'interests.mlops.title': 'MLOps & Engineering',
         'interests.mlops.desc': 'Déploiement, surveillance et maintenance de modèles d\'IA en production',
-        
+
         // Publications Section
         'publications.badge': '📚 Publications',
         'publications.title': 'Publications Scientifiques',
         'publications.subtitle': 'Contributions à la recherche en modélisation hydrologique et Deep Learning',
         'publications.link': '🔗 Consulter la publication →',
-        
+
         // Projects Section
         'projects.badge': '💡 Réalisations',
         'projects.title': 'Projets Significatifs',
@@ -57,12 +57,22 @@ const translations = {
         'projects.hymolap.link': '🔗 Découvrir l\'application →',
         'projects.surveillance.title': '📊 Modèles de Surveillance Séquentielle',
         'projects.surveillance.desc': 'Implémentation de modèles de surveillance basés sur des données séquentielles pour la détection d\'anomalies et la prédiction de tendances dans des séries temporelles complexes.',
-        
+
         // Experience Section
         'experience.badge': '💼 Expérience',
         'experience.title': 'Parcours Professionnel',
+        'experience.gozem.role': 'Data Scientist – Gozem Bénin',
+        'experience.gozem.date': 'Mars 2023 – Aujourd\'hui',
+        'experience.gozem.intro': 'En tant que Data Scientist chez Gozem, je développe des solutions d\'IA avancées pour optimiser les opérations et améliorer l\'expérience utilisateur.',
+        'experience.gozem.task1': '<strong>Chatbot & NLP :</strong> Développement d\'un chatbot de support client intelligent alimenté par RAG (Retrieval-Augmented Generation) et des techniques NLP avancées, améliorant la résolution au premier contact de 50%.',
+        'experience.gozem.task2': '<strong>Vision par Ordinateur :</strong> Conception et déploiement de modèles utilisés par des milliers d\'utilisateurs pour l\'inspection automatisée de véhicules et la vérification de conformité du branding.',
+        'experience.gozem.task3': '<strong>Modélisation de Risque & Crédit :</strong> Développement de modèles de scoring pour l\'éligibilité au financement de véhicules et d\'outils d\'analyse prédictive pour soutenir les opérations de financement (Champions V+, prix de revente).',
+        'experience.gozem.task4': '<strong>IA Explicable (XAI) :</strong> Implémentation d\'outils XAI pour garantir la transparence et la responsabilité des modèles dans des contextes opérationnels à enjeux élevés.',
+        'experience.gozem.task5': '<strong>Business Intelligence (BI) :</strong> Architecture de l\'écosystème BI (+50 tableaux de bord Looker Studio) pilotant l\'intégralité du cycle de financement, de la collecte et de la gestion des stocks.',
+        'experience.gozem.task6': '<strong>Gouvernance des Données :</strong> Collaboration avec des équipes transverses pour la qualité et la gouvernance des données. Automatisation du cycle de vie des accès.',
+        'experience.gozem.task7': '<strong>Performance Opérationnelle :</strong> Traitement des analyses d\'impact avec un taux de respect des délais de 95% (SLA < 48h).',
         'experience.education': 'Formation Académique',
-        
+
         // Skills Section
         'skills.badge': '⚡ Compétences',
         'skills.title': 'Compétences Techniques',
@@ -73,7 +83,7 @@ const translations = {
         'skills.data.title': 'Traitement de Données',
         'skills.modeling.title': 'Modélisation & Analyse',
         'skills.lang.title': 'Langues',
-        
+
         // Contact Section
         'contact.badge': '✉️ Contact',
         'contact.title': 'Me Contacter',
@@ -82,7 +92,7 @@ const translations = {
         'contact.phone': 'Téléphone',
         'contact.linkedin': 'LinkedIn',
         'contact.location': 'Localisation',
-        
+
         // Footer
         'footer.rights': '© 2025 Oscar HOUESSOU. Tous droits réservés.',
         'footer.tagline': 'Ingénieur en IA passionné par la recherche en Deep Learning'
@@ -96,7 +106,7 @@ const translations = {
         'nav.experience': 'Experience',
         'nav.skills': 'Skills',
         'nav.contact': 'Contact',
-        
+
         // Hero Section
         'hero.badge': 'Data Scientist & AI Researcher',
         'hero.name': 'Oscar HOUESSOU',
@@ -105,7 +115,7 @@ const translations = {
         'hero.location': '📍 Cotonou, Benin | 💼 Data Scientist @ Gozem | 🔬 AI Researcher',
         'hero.btn.projects': '🚀 View my work',
         'hero.btn.contact': '✉️ Contact me',
-        
+
         // Interests Section
         'interests.badge': '🔬 Technical Expertise',
         'interests.title': 'Areas of Expertise',
@@ -122,13 +132,13 @@ const translations = {
         'interests.ml.desc': 'Classification systems capable of detecting multiple categories simultaneously',
         'interests.mlops.title': 'MLOps & Engineering',
         'interests.mlops.desc': 'Deployment, monitoring, and maintenance of AI models in production',
-        
+
         // Publications Section
         'publications.badge': '📚 Publications',
         'publications.title': 'Scientific Publications',
         'publications.subtitle': 'Contributions to research in hydrological modeling and Deep Learning',
         'publications.link': '🔗 View publication →',
-        
+
         // Projects Section
         'projects.badge': '💡 Achievements',
         'projects.title': 'Significant Projects',
@@ -144,12 +154,22 @@ const translations = {
         'projects.hymolap.link': '🔗 Discover the app →',
         'projects.surveillance.title': '📊 Sequential Monitoring Models',
         'projects.surveillance.desc': 'Implementation of monitoring models based on sequential data for anomaly detection and trend prediction in complex time series.',
-        
+
         // Experience Section
         'experience.badge': '💼 Experience',
         'experience.title': 'Professional Background',
+        'experience.gozem.role': 'Data Scientist – Gozem Benin',
+        'experience.gozem.date': 'March 2023 – Present',
+        'experience.gozem.intro': 'As a Data Scientist at Gozem, I develop advanced AI solutions to optimize operations and enhance user experience.',
+        'experience.gozem.task1': '<strong>Chatbot & NLP:</strong> Developed an intelligent customer support chatbot powered by RAG and advanced NLP techniques, improving first-contact resolution by 50%.',
+        'experience.gozem.task2': '<strong>Computer Vision:</strong> Built and deployed models used by thousands of users for automated vehicle inspection and visual compliance verification of branding.',
+        'experience.gozem.task3': '<strong>Financing & Risk Modeling:</strong> Developed credit-scoring models for vehicle lease financing eligibility and predictive analytics tools to support financing operations (Champions V+, resale prices).',
+        'experience.gozem.task4': '<strong>Explainable AI (XAI):</strong> Implemented XAI tools to ensure model transparency and accountability in high-stakes operational contexts.',
+        'experience.gozem.task5': '<strong>Business Intelligence (BI):</strong> Architected the BI ecosystem (+50 Looker Studio dashboards) driving the entire financing cycle, collection, and inventory management.',
+        'experience.gozem.task6': '<strong>Data Governance:</strong> Collaborated with cross-functional teams on data governance. Automated access lifecycle.',
+        'experience.gozem.task7': '<strong>Operational Performance:</strong> Handled impact analyses and financing team requests with a 95% on-time delivery rate (SLA < 48h).',
         'experience.education': 'Academic Background',
-        
+
         // Skills Section
         'skills.badge': '⚡ Skills',
         'skills.title': 'Technical Skills',
@@ -160,7 +180,7 @@ const translations = {
         'skills.data.title': 'Data Processing',
         'skills.modeling.title': 'Modeling & Analysis',
         'skills.lang.title': 'Languages',
-        
+
         // Contact Section
         'contact.badge': '✉️ Contact',
         'contact.title': 'Get in Touch',
@@ -169,7 +189,7 @@ const translations = {
         'contact.phone': 'Phone',
         'contact.linkedin': 'LinkedIn',
         'contact.location': 'Location',
-        
+
         // Footer
         'footer.rights': '© 2025 Oscar HOUESSOU. All rights reserved.',
         'footer.tagline': 'AI Engineer passionate about Deep Learning research'
@@ -182,15 +202,16 @@ let currentLang = localStorage.getItem('preferredLanguage') || 'fr';
 function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('preferredLanguage', lang);
-    
+
     // Update all elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            // Use innerHTML to allow html tags like <strong> in translations
+            element.innerHTML = translations[lang][key];
         }
     });
-    
+
     // Update language toggle button state
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
@@ -201,7 +222,7 @@ function setLanguage(lang) {
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
     setLanguage(currentLang);
-    
+
     // Add click handlers to language buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
