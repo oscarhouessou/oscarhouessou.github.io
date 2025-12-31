@@ -41,6 +41,16 @@ const translations = {
         'publications.title': 'Publications Scientifiques',
         'publications.subtitle': 'Contributions à la recherche en modélisation hydrologique et Deep Learning',
         'publications.link': '🔗 Consulter la publication →',
+        'publications.paper1.badge': '2024 • Journal International',
+        'publications.paper1.title': 'Comparison of Two Recurrent Neural Networks for Rainfall-Runoff Modeling',
+        'publications.paper1.journal': '📖 Journal of Geoscience and Environment Protection<br>DOI: 10.4236/gep.2024.129009',
+        'publications.paper1.authors': '👥 HOUESSOU, O., et al.',
+        'publications.paper1.summary': 'Comparaison des performances de deux architectures de réseaux de neurones récurrents (LSTM vs GRU) pour la modélisation de la relation pluie-débit dans un contexte hydrologique.',
+        'publications.paper2.badge': '2023 • Journal International',
+        'publications.paper2.title': 'Modeling River Discharge Using Deep Learning',
+        'publications.paper2.journal': '📖 International Journal of Geography, Geology and Geosciences',
+        'publications.paper2.authors': '👥 HOUESSOU, O., et al.',
+        'publications.paper2.summary': 'Application des techniques de deep learning pour la modélisation du débit fluvial avec évaluation comparative des modèles pour la prédiction de séquences non linéaires.',
 
         // Projects Section
         'projects.badge': '💡 Réalisations',
@@ -137,6 +147,16 @@ const translations = {
         'publications.title': 'Scientific Publications',
         'publications.subtitle': 'Contributions to research in hydrological modeling and Deep Learning',
         'publications.link': '🔗 View publication →',
+        'publications.paper1.badge': '2024 • International Journal',
+        'publications.paper1.title': 'Comparison of Two Recurrent Neural Networks for Rainfall-Runoff Modeling',
+        'publications.paper1.journal': '📖 Journal of Geoscience and Environment Protection<br>DOI: 10.4236/gep.2024.129009',
+        'publications.paper1.authors': '👥 HOUESSOU, O., et al.',
+        'publications.paper1.summary': 'Performance comparison of two recurrent neural network architectures (LSTM vs GRU) for rainfall-runoff modeling in a hydrological context.',
+        'publications.paper2.badge': '2023 • International Journal',
+        'publications.paper2.title': 'Modeling River Discharge Using Deep Learning',
+        'publications.paper2.journal': '📖 International Journal of Geography, Geology and Geosciences',
+        'publications.paper2.authors': '👥 HOUESSOU, O., et al.',
+        'publications.paper2.summary': 'Application of deep learning techniques for river discharge modeling with comparative evaluation of models for non-linear sequence prediction.',
 
         // Projects Section
         'projects.badge': '💡 Achievements',
