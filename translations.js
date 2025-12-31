@@ -227,7 +227,7 @@ const translations = {
 };
 
 // Language switching functionality
-let currentLang = localStorage.getItem('preferredLanguage') || 'fr';
+let currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
 function setLanguage(lang) {
     currentLang = lang;
