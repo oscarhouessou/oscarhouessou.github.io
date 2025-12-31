@@ -8,7 +8,12 @@ const translations = {
         'nav.projects': 'Projets',
         'nav.experience': 'Expérience',
         'nav.skills': 'Compétences',
+        'nav.resume': 'Résume/CV',
         'nav.contact': 'Contact',
+
+        // SEO
+        'seo.description': 'Portfolio de Oscar HOUESSOU, Data Scientist & Chercheur en IA. Expert en Deep Learning, NLP, RAG, Vision par Ordinateur et Scoring de Crédit.',
+        'seo.keywords': 'Oscar Houessou, Data Scientist, IA, Bénin, Deep Learning, NLP, RAG, Computer Vision, Scoring, Portfolio',
 
         // Hero Section
         'hero.badge': 'Data Scientist & Chercheur en IA',
@@ -17,6 +22,7 @@ const translations = {
         'hero.subtitle': 'Data Scientist passionné par la résolution de problèmes métiers complexes grâce à l\'IA. Fort d\'une expérience en recherche académique et en industrie, je développe des solutions d\'IA à fort impact : chatbots intelligents, modèles de vision par ordinateur, scoring de crédit, et outils d\'IA explicable pour garantir transparence et confiance.',
         'hero.location': '📍 Cotonou, Bénin | 💼 Data Scientist @ Gozem | 🔬 Chercheur en IA',
         'hero.btn.projects': '🚀 Voir mes réalisations',
+        'hero.btn.cv': '📄 Télécharger CV',
         'hero.btn.contact': '✉️ Me contacter',
 
         // Interests Section
@@ -114,7 +120,12 @@ const translations = {
         'nav.projects': 'Projects',
         'nav.experience': 'Experience',
         'nav.skills': 'Skills',
+        'nav.resume': 'Resume/CV',
         'nav.contact': 'Contact',
+
+        // SEO
+        'seo.description': 'Portfolio of Oscar HOUESSOU, Data Scientist & AI Researcher. Expert in Deep Learning, NLP, RAG, Computer Vision, and Credit Scoring.',
+        'seo.keywords': 'Oscar Houessou, Data Scientist, AI, Benin, Deep Learning, NLP, RAG, Computer Vision, Scoring, Portfolio',
 
         // Hero Section
         'hero.badge': 'Data Scientist & AI Researcher',
@@ -123,6 +134,7 @@ const translations = {
         'hero.subtitle': 'Data Scientist passionate about solving complex business problems through AI. With experience in both academic research and industry, I develop high-impact AI solutions: intelligent chatbots, computer vision models, credit scoring, and explainable AI tools to ensure transparency and trust.',
         'hero.location': '📍 Cotonou, Benin | 💼 Data Scientist @ Gozem | 🔬 AI Researcher',
         'hero.btn.projects': '🚀 View my work',
+        'hero.btn.cv': '📄 Download CV',
         'hero.btn.contact': '✉️ Contact me',
 
         // Interests Section

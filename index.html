@@ -5,6 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oscar HOUESSOU - Data Scientist & AI Researcher</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" data-i18n="seo.description"
+        content="Portfolio de Oscar HOUESSOU, Data Scientist & Chercheur en IA. Expert en Deep Learning, NLP, RAG, Vision par Ordinateur et Scoring de Crédit.">
+    <meta name="keywords" data-i18n="seo.keywords"
+        content="Oscar Houessou, Data Scientist, IA, Bénin, Deep Learning, NLP, RAG, Computer Vision, Scoring, Portfolio">
+    <meta name="author" content="Oscar HOUESSOU">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oscarhouessou.github.io/">
+    <meta property="og:title" content="Oscar HOUESSOU - Data Scientist & AI Researcher">
+    <meta property="og:description" data-i18n="seo.description"
+        content="Portfolio de Oscar HOUESSOU, Data Scientist & Chercheur en IA. Expert en Deep Learning, NLP, RAG, Vision par Ordinateur et Scoring de Crédit.">
+    <meta property="og:image" content="pph.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://oscarhouessou.github.io/">
+    <meta property="twitter:title" content="Oscar HOUESSOU - Data Scientist & AI Researcher">
+    <meta property="twitter:description" data-i18n="seo.description"
+        content="Portfolio de Oscar HOUESSOU, Data Scientist & Chercheur en IA. Expert en Deep Learning, NLP, RAG, Vision par Ordinateur et Scoring de Crédit.">
+    <meta property="twitter:image" content="pph.png">
+
     <link rel="stylesheet" href="styles.css">
     <script src="translations.js" defer></script>
 </head>
@@ -25,11 +49,19 @@
                 <li><a href="#projets" data-i18n="nav.projects">Projets</a></li>
                 <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
                 <li><a href="#competences" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="Oscar_Houessou_CV_Research_MILA.pdf" target="_blank" data-i18n="nav.resume">CV</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <div class="lang-toggle">
-                <button class="lang-btn active" data-lang="fr">FR</button>
-                <button class="lang-btn" data-lang="en">EN</button>
+            <div class="nav-actions">
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="fr" aria-label="Passer en Français">FR</button>
+                    <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-btn" class="theme-btn" aria-label="Changer le thème">
+                        🌙
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -59,6 +91,10 @@
                     <div class="cta-buttons">
                         <a href="#projets" class="btn btn-primary" data-i18n="hero.btn.projects">
                             🚀 Voir mes réalisations
+                        </a>
+                        <a href="Oscar_Houessou_CV_Research_MILA.pdf" target="_blank" class="btn btn-cv"
+                            data-i18n="hero.btn.cv">
+                            📄 Télécharger CV
                         </a>
                         <a href="#contact" class="btn btn-secondary" data-i18n="hero.btn.contact">
                             ✉️ Me contacter
@@ -450,6 +486,56 @@
                 }
             });
         });
+
+        // Theme Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeBtn = document.getElementById('theme-btn');
+            const body = document.body;
+
+            // Initialize theme from localStorage
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeBtn.textContent = '☀️';
+            }
+
+            themeBtn.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                themeBtn.textContent = isDark ? '☀️' : '🌙';
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+        });
+
+        // Update meta tags description and content on language change
+        function updateMetaTags(lang) {
+            const desc = translations[lang]['seo.description'];
+            if (desc) {
+                const metaDesc = document.querySelector('meta[name="description"]');
+                if (metaDesc) metaDesc.setAttribute('content', desc);
+
+                const ogDesc = document.querySelector('meta[property="og:description"]');
+                if (ogDesc) ogDesc.setAttribute('content', desc);
+
+                const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+                if (twitterDesc) twitterDesc.setAttribute('content', desc);
+            }
+
+            const keywords = translations[lang]['seo.keywords'];
+            if (keywords) {
+                const metaKeywords = document.querySelector('meta[name="keywords"]');
+                if (metaKeywords) metaKeywords.setAttribute('content', keywords);
+            }
+        }
+
+        // Intercept setLanguage to update meta tags
+        const originalSetLanguage = window.setLanguage;
+        window.setLanguage = function (lang) {
+            if (typeof originalSetLanguage === 'function') {
+                originalSetLanguage(lang);
+            }
+            updateMetaTags(lang);
+        };
 
         // Animation on scroll
         const observerOptions = {
