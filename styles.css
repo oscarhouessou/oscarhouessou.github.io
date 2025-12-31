@@ -66,6 +66,54 @@ body.dark-mode footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* Animated Background */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--bg-body);
+    overflow: hidden;
+    transition: var(--theme-transition);
+}
+
+.animated-bg::before,
+.animated-bg::after {
+    content: '';
+    position: absolute;
+    width: 60vmax;
+    height: 60vmax;
+    background: var(--accent-gradient);
+    filter: blur(80px);
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: float 20s infinite alternate;
+}
+
+body.dark-mode .animated-bg::before,
+body.dark-mode .animated-bg::after {
+    opacity: 0.1;
+}
+
+.animated-bg::after {
+    background: var(--primary);
+    animation-delay: -10s;
+    right: -10%;
+    top: -10%;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-10%, -10%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(10%, 10%) rotate(360deg);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -335,6 +383,7 @@ section {
 .cta-buttons {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -787,10 +836,22 @@ footer {
 
     .cta-buttons {
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
     }
 
     nav ul {
         display: none;
+    }
+
+    .nav-actions {
+        margin-left: auto;
     }
 
     .section-title {
