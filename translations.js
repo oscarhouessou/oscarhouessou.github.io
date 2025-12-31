@@ -55,8 +55,7 @@ const translations = {
         'projects.hymolap.title': '🌊 HyMoLap - Simulation Hydrologique',
         'projects.hymolap.desc': 'Application interactive Shiny pour la simulation et la visualisation de données temporelles hydrologiques. Outil développé pour faciliter la compréhension et l\'analyse de systèmes dynamiques complexes.',
         'projects.hymolap.link': '🔗 Découvrir l\'application →',
-        'projects.surveillance.title': '📊 Modèles de Surveillance Séquentielle',
-        'projects.surveillance.desc': 'Implémentation de modèles de surveillance basés sur des données séquentielles pour la détection d\'anomalies et la prédiction de tendances dans des séries temporelles complexes.',
+
 
         // Experience Section
         'experience.badge': '💼 Expérience',
@@ -152,8 +151,7 @@ const translations = {
         'projects.hymolap.title': '🌊 HyMoLap - Hydrological Simulation',
         'projects.hymolap.desc': 'Interactive Shiny application for simulation and visualization of hydrological time series data. Tool developed to facilitate understanding and analysis of complex dynamic systems.',
         'projects.hymolap.link': '🔗 Discover the app →',
-        'projects.surveillance.title': '📊 Sequential Monitoring Models',
-        'projects.surveillance.desc': 'Implementation of monitoring models based on sequential data for anomaly detection and trend prediction in complex time series.',
+
 
         // Experience Section
         'experience.badge': '💼 Experience',
