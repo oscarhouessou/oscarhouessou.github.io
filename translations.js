@@ -105,12 +105,50 @@ const translations = {
         'contact.subtitle': 'Contactez-moi pour discuter de collaborations techniques ou de projets innovants',
         'contact.email': 'Email',
         'contact.phone': 'Téléphone',
+        'contact.phone.value': '+229 01 65 50 97 16',
         'contact.linkedin': 'LinkedIn',
+        'contact.linkedin.value': 'linkedin.com/in/oscarhouessou',
         'contact.location': 'Localisation',
+        'contact.location.value': 'Cotonou, Bénin',
 
         // Footer
         'footer.rights': '© 2025 Oscar HOUESSOU. Tous droits réservés.',
-        'footer.tagline': 'Ingénieur en IA passionné par la recherche en Deep Learning'
+        'footer.tagline': 'Ingénieur en IA passionné par la recherche en Deep Learning',
+
+        // Additional Experience
+        'experience.lha.role': 'Assistant de Recherche – Laboratoire d\'Hydrologie Appliquée (LHA/UAC)',
+        'experience.lha.date': 'Janvier – Mars 2023',
+        'experience.lha.task1': 'Modélisation de signaux temporels hydrologiques avec LSTM et GRU',
+        'experience.lha.task2': 'Évaluation comparative de modèles de deep learning pour la prédiction de séquences',
+        'experience.lha.task3': 'Co-rédaction de deux manuscrits scientifiques acceptés pour publication',
+
+        'experience.pfe.role': 'Projet de Fin d\'Études – LHA/UAC',
+        'experience.pfe.date': 'Juin – Décembre 2022',
+        'experience.pfe.task1': 'Conception de modèles prédictifs basés sur des signaux temporels multi-sources',
+        'experience.pfe.task2': 'Prétraitement, nettoyage et validation de larges jeux de données séquentielles',
+        'experience.pfe.task3': 'Analyse de performance et contrôles statistiques',
+
+        // Education
+        'education.degree1.title': 'Diplôme d\'Ingénieur – Mathématiques Appliquées & Modélisation (ENSGMM)',
+        'education.degree1.date': '2020 – 2022',
+        'education.degree1.desc': 'Modélisation numérique, optimisation, statistiques avancées, probabilités appliquées, machine learning',
+        'education.degree2.title': 'Classes Préparatoires Scientifiques (INSPEI)',
+        'education.degree2.date': '2018 – 2019',
+        'education.degree2.desc': 'Physique, mathématiques supérieures/spéciales, méthodes analytiques',
+
+        // Skills categories and items
+        'skills.frameworks.items': '<li>PyTorch, TensorFlow, Keras – Deep Learning</li><li>Scikit-learn – Machine Learning classique</li><li>MLflow – Suivi d’expériences</li>',
+        'skills.expertise.items': '<li>Deep Learning (CNN, RNN : LSTM, GRU)</li><li>Séries temporelles</li><li>IA explicable (XAI)</li><li>Classification, prédiction, optimisation</li>',
+        'skills.tools.items': '<li>GCP (Vertex AI, Cloud Run) – MLOps & Cloud Computing</li><li>Git, Docker, GitLab CI/CD – DevOps</li><li>Tableau, Looker Studio – BI & Visualisation</li><li>Streamlit – Applications Data</li>',
+        'skills.data.items': '<li>Pandas, NumPy – Manipulation et analyse</li><li>Preprocessing, Feature Engineering</li>',
+        'skills.modeling.items': '<li>Modélisation prédictive</li><li>Optimisation</li><li>Statistiques avancées</li><li>Time Series</li>',
+
+        // Languages
+        'languages.title': 'Langues',
+        'languages.fr.name': '🇫🇷 Français',
+        'languages.fr.level': 'Langue maternelle',
+        'languages.en.name': '🇬🇧 Anglais',
+        'languages.en.level': 'Courant – lecture et rédaction scientifique'
     },
     en: {
         // Navigation
@@ -217,12 +255,50 @@ const translations = {
         'contact.subtitle': 'Contact me to discuss technical collaborations or innovative projects',
         'contact.email': 'Email',
         'contact.phone': 'Phone',
+        'contact.phone.value': '+229 01 65 50 97 16',
         'contact.linkedin': 'LinkedIn',
+        'contact.linkedin.value': 'linkedin.com/in/oscarhouessou',
         'contact.location': 'Location',
+        'contact.location.value': 'Cotonou, Benin',
 
         // Footer
         'footer.rights': '© 2025 Oscar HOUESSOU. All rights reserved.',
-        'footer.tagline': 'AI Engineer passionate about Deep Learning research'
+        'footer.tagline': 'AI Engineer passionate about Deep Learning research',
+
+        // Additional Experience
+        'experience.lha.role': 'Research Assistant – Applied Hydrology Laboratory (LHA/UAC)',
+        'experience.lha.date': 'January – March 2023',
+        'experience.lha.task1': 'Modeling of hydrological time signals with LSTM and GRU',
+        'experience.lha.task2': 'Comparative evaluation of deep learning models for sequence prediction',
+        'experience.lha.task3': 'Co-authoring of two scientific manuscripts accepted for publication',
+
+        'experience.pfe.role': 'Final Year Project – LHA/UAC',
+        'experience.pfe.date': 'June – December 2022',
+        'experience.pfe.task1': 'Design of predictive models based on multi-source time signals',
+        'experience.pfe.task2': 'Preprocessing, cleaning, and validation of large sequential datasets',
+        'experience.pfe.task3': 'Performance analysis and statistical controls',
+
+        // Education
+        'education.degree1.title': 'Engineering Degree – Applied Mathematics & Modeling (ENSGMM)',
+        'education.degree1.date': '2020 – 2022',
+        'education.degree1.desc': 'Numerical modeling, optimization, advanced statistics, applied probability, machine learning',
+        'education.degree2.title': 'Scientific Preparatory Classes (INSPEI)',
+        'education.degree2.date': '2018 – 2019',
+        'education.degree2.desc': 'Physics, higher/special mathematics, analytical methods',
+
+        // Skills categories and items
+        'skills.frameworks.items': '<li>PyTorch, TensorFlow, Keras – Deep Learning</li><li>Scikit-learn – Classic Machine Learning</li><li>MLflow – Experiment tracking</li>',
+        'skills.expertise.items': '<li>Deep Learning (CNN, RNN: LSTM, GRU)</li><li>Time Series</li><li>Explainable AI (XAI)</li><li>Classification, prediction, optimization</li>',
+        'skills.tools.items': '<li>GCP (Vertex AI, Cloud Run) – MLOps & Cloud Computing</li><li>Git, Docker, GitLab CI/CD – DevOps</li><li>Tableau, Looker Studio – BI & Visualization</li><li>Streamlit – Data Applications</li>',
+        'skills.data.items': '<li>Pandas, NumPy – Manipulation and analysis</li><li>Preprocessing, Feature Engineering</li>',
+        'skills.modeling.items': '<li>Predictive modeling</li><li>Optimization</li><li>Advanced statistics</li><li>Time Series</li>',
+
+        // Languages
+        'languages.title': 'Languages',
+        'languages.fr.name': '🇫🇷 French',
+        'languages.fr.level': 'Native',
+        'languages.en.name': '🇬🇧 English',
+        'languages.en.level': 'Fluent – scientific reading and writing'
     }
 };
 
