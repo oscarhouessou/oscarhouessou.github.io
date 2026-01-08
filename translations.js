@@ -52,11 +52,13 @@ const translations = {
         'publications.paper1.journal': '📖 Journal of Geoscience and Environment Protection<br>DOI: 10.4236/gep.2024.129009',
         'publications.paper1.authors': '👥 HOUESSOU, O., et al.',
         'publications.paper1.summary': 'Comparaison des performances de deux architectures de réseaux de neurones récurrents (LSTM vs GRU) pour la modélisation de la relation pluie-débit dans un contexte hydrologique.',
+        'publications.paper1.url': 'https://www.scirp.org/journal/paperinformation?paperid=136353',
         'publications.paper2.badge': '2023 • Journal International',
         'publications.paper2.title': 'Modeling River Discharge Using Deep Learning',
         'publications.paper2.journal': '📖 International Journal of Geography, Geology and Geosciences',
         'publications.paper2.authors': '👥 HOUESSOU, O., et al.',
         'publications.paper2.summary': 'Application des techniques de deep learning pour la modélisation du débit fluvial avec évaluation comparative des modèles pour la prédiction de séquences non linéaires.',
+        'publications.paper2.url': 'https://doi.org/10.14445/23939206/IJGGS-V10I1P103',
 
         // Projects Section
         'projects.badge': '💡 Réalisations',
@@ -202,11 +204,13 @@ const translations = {
         'publications.paper1.journal': '📖 Journal of Geoscience and Environment Protection<br>DOI: 10.4236/gep.2024.129009',
         'publications.paper1.authors': '👥 HOUESSOU, O., et al.',
         'publications.paper1.summary': 'Performance comparison of two recurrent neural network architectures (LSTM vs GRU) for rainfall-runoff modeling in a hydrological context.',
+        'publications.paper1.url': 'https://www.scirp.org/journal/paperinformation?paperid=136353',
         'publications.paper2.badge': '2023 • International Journal',
         'publications.paper2.title': 'Modeling River Discharge Using Deep Learning',
         'publications.paper2.journal': '📖 International Journal of Geography, Geology and Geosciences',
         'publications.paper2.authors': '👥 HOUESSOU, O., et al.',
         'publications.paper2.summary': 'Application of deep learning techniques for river discharge modeling with comparative evaluation of models for non-linear sequence prediction.',
+        'publications.paper2.url': 'https://doi.org/10.14445/23939206/IJGGS-V10I1P103',
 
         // Projects Section
         'projects.badge': '💡 Achievements',
@@ -315,6 +319,14 @@ function setLanguage(lang) {
         if (translations[lang][key]) {
             // Use innerHTML to allow html tags like <strong> in translations
             element.innerHTML = translations[lang][key];
+        }
+    });
+
+    // Update links with data-i18n-href attribute
+    document.querySelectorAll('[data-i18n-href]').forEach(element => {
+        const key = element.getAttribute('data-i18n-href');
+        if (translations[lang][key]) {
+            element.setAttribute('href', translations[lang][key]);
         }
     });
 
