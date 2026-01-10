@@ -144,6 +144,7 @@ const translations = {
         'skills.tools.items': '<li>GCP (Vertex AI, Cloud Run) – MLOps & Cloud Computing</li><li>Git, Docker, GitLab CI/CD – DevOps</li><li>Tableau, Looker Studio – BI & Visualisation</li><li>Streamlit – Applications Data</li>',
         'skills.data.items': '<li>Pandas, NumPy – Manipulation et analyse</li><li>Preprocessing, Feature Engineering</li>',
         'skills.modeling.items': '<li>Modélisation prédictive</li><li>Optimisation</li><li>Statistiques avancées</li><li>Time Series</li>',
+        'skills.languages.items': '<li><strong>Python</strong> – Data Science, IA, scripts avancés</li><li>R – Statistiques, visualisation</li><li>SQL – Manipulation de bases de données</li><li>MATLAB – Modélisation mathématique</li>',
 
         // Languages
         'languages.title': 'Langues',
@@ -296,6 +297,7 @@ const translations = {
         'skills.tools.items': '<li>GCP (Vertex AI, Cloud Run) – MLOps & Cloud Computing</li><li>Git, Docker, GitLab CI/CD – DevOps</li><li>Tableau, Looker Studio – BI & Visualization</li><li>Streamlit – Data Applications</li>',
         'skills.data.items': '<li>Pandas, NumPy – Manipulation and analysis</li><li>Preprocessing, Feature Engineering</li>',
         'skills.modeling.items': '<li>Predictive modeling</li><li>Optimization</li><li>Advanced statistics</li><li>Time Series</li>',
+        'skills.languages.items': '<li><strong>Python</strong> – Data Science, AI, advanced scripts</li><li>R – Statistics, visualization</li><li>SQL – Database manipulation</li><li>MATLAB – Mathematical modeling</li>',
 
         // Languages
         'languages.title': 'Languages',
